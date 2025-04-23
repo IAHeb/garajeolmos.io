@@ -269,6 +269,8 @@
 
     <script>
         // Simulación de la base de datos en memoria (para reemplazar con conexión real a Access)
+        const ADO = require('node-adodb');
+        
         const db = {
             usuarios: [
                 { codigo: "123", estado: "Activo", nombre: "Hebner", celular: "789456123", vehiculo: "Toyota", color: "Rojo", marca: "Toyota", placa: "ABC-123", fecharegistro: "2024-01-20", hingreso: "08:00", hsalida: "18:00", montoapagar: "100" },
